@@ -1,4 +1,4 @@
-@media (min-width: 250px) {
+@media (max-width: 350px) {
 
   .judul-layar-kecil {
     font-size: 1.7em !important;
