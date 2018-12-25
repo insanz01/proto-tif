@@ -1,0 +1,45 @@
+<div class="container">
+  <h1 class="display-4 text-center py-3 judul-layar-kecil">
+    Pilih Slot
+  </h1>
+  <div class="row">
+    <div class="col-12 py-2" *ngFor="let item of ambil">
+      <div class="card col-12" data-toggle="modal" data-target="#pilihJadwal" (click)="pesan(item.nama)">
+        <div class="card-body py-3">
+          <h5 class="card-title">{{item.nama}}</h5> <br>
+          <h6 class="card-subtitle mb-2 text-muted">Pilih jadwal</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary my-3 mx-2" [routerLink]="['/praktikum']" routerLinkActive="router-link-active">Simpan
+  Jadwal</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="pilihJadwal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="labelJadwalPraktikum">Pilih Jadwal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check px-3" *ngFor="let item of ambilModal">
+          <input class="form-check-input" type="radio" name="slot" [id]="item.kode" (click)="pilih(item.kode)">
+          <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+            Lab {{item.lab}} : {{item.hari}}, {{item.jam}}
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="hasil()">Simpan perubahan</button>
+      </div>
+    </div>
+  </div>
+</div>

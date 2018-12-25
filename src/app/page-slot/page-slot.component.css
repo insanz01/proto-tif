@@ -1,0 +1,10 @@
+@media (max-width: 400px) {
+
+  judul-layar-kecil {
+    font: 2em !important;
+  }
+
+  teks-layar-kecil {
+    font: 0.8em !important;
+  }
+}
