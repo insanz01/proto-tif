@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1>Website TIF</h1>
+  <hr class="my-4">
+  <p class="lead">Ceritanya ini halaman landing page nya TIF UAD</p>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas consequuntur facere culpa
+    eum, ullam sunt, aperiam sint beatae voluptatem consectetur, tenetur maxime iusto velit dicta est a ratione
+    reiciendis.</p>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-3 col-sm-12 py-5" *ngFor="let item of berita">
+    <div class="card mx-auto d-block py-1" style="width: 18rem;">
+      <div class="card-img-top abu">
+      </div>
+      <div class="card-body px-1 py-2">
+        <h5 class="card-title">{{item.judul}}</h5>
+        <p class="card-text text-muted">{{item.deskripsi}}</p>
+        <a href="#" class="btn btn-block">Baca Lebih lanjut</a>
+      </div>
+    </div>
+  </div>
+</div>

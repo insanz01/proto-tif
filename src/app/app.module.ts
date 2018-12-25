@@ -5,6 +5,8 @@ import { AppRoutingModule, routingPage } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageSlotComponent } from './page-slot/page-slot.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageLandingComponent } from './page-landing/page-landing.component';
+import { PageAboutComponent } from './page-about/page-about.component';
 // import { PagePraktikumComponent } from './page-praktikum/page-praktikum.component';
 
 @NgModule({
@@ -13,7 +15,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     // PagePraktikumComponent
     routingPage,
     PageSlotComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PageLandingComponent,
+    PageAboutComponent
   ],
   imports: [
     BrowserModule,
