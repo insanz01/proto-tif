@@ -42,7 +42,7 @@ export class PageSlotComponent implements OnInit {
 
   ambilModal = [];
 
-  private pilihan = '';
+  private pilihan_notif = '';
 
   constructor() { }
 
@@ -62,15 +62,14 @@ export class PageSlotComponent implements OnInit {
   pilih(kode: string) {
     for (const data of this.ambilModal) {
       if (data.kode === kode) {
-        this.pilihan = 'Kamu memilih : lab ' + data.lab + ' hari ' + data.hari + ', ' + data.jam;
-        // window.alert('Kamu memilih : lab ' + data.lab + ' hari ' + data.hari + ', ' + data.jam);
+        this.pilihan_notif = 'Kamu memilih : lab ' + data.lab + ' hari ' + data.hari + ', ' + data.jam;
         break;
       }
     }
   }
 
   hasil() {
-    window.alert(this.pilihan);
+    window.alert(this.pilihan_notif);
   }
 
 }
