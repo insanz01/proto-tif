@@ -1,0 +1,10 @@
+@media (max-width: 350px) {
+
+  .judul-layar-kecil {
+    font-size: 1.7em !important;
+  }
+
+  .teks-layar-kecil {
+    font-size: 0.9em !important;
+  }
+}

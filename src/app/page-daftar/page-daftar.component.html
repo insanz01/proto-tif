@@ -1,0 +1,158 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4 judul-layar-kecil">Pendaftaran Praktikum</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="accordion" id="accordionExample">
+    <div class="card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      <div class="card-header alert-success" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #1
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 1">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #2
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 2">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+      <div class="card-header alert-success" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #3
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 3">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #4
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 4">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+      <div class="card-header alert-success" id="headingFive">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #5
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 5">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+      <div class="card-header" id="headingSix">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #6
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 6">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+      <div class="card-header alert-success" id="headingSeven">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button">
+            Praktikum Semester #7
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+        <div class="card-body px-5">
+          <div *ngFor="let item of praktikum">
+            <div class="form-check" *ngIf="item.semester === 7">
+              <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
+              <label class="form-check-label teks-layar-kecil" [for]="item.kode">
+                {{item.nama}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <button type="button" class="btn btn-primary btn-block">Submit</button>
+</div>

@@ -12,8 +12,4 @@ export class PagePraktikumComponent implements OnInit {
   ngOnInit() {
   }
 
-  nothingHandle() {
-    window.alert('Page ini belum tersedia');
-  }
-
 }
