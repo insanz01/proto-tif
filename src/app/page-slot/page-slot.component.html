@@ -33,9 +33,10 @@
       </div>
       <div class="modal-body">
         <div class="form-check px-3" *ngFor="let item of ambilModal">
-          <input class="form-check-input" type="radio" name="slot" [id]="item.kode" (click)="pilih(item.kode)">
+          <input class="form-check-input" type="radio" name="slot" [id]="item.kode" (click)="pilih(item.kode)" *ngIf="item.sisa != 0">
+          <input class="form-check-input" type="radio" name="slot" [id]="item.kode" disabled *ngIf="item.sisa == 0">
           <label class="form-check-label teks-layar-kecil" [for]="item.kode">
-            Lab {{item.lab}} : {{item.hari}}, {{item.jam}}
+            Lab {{item.lab}} : {{item.hari}}, {{item.jam}}, Sisa : {{item.sisa}}
           </label>
         </div>
       </div>

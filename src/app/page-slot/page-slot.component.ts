@@ -8,27 +8,27 @@ import { Component, OnInit } from '@angular/core';
 export class PageSlotComponent implements OnInit {
 
   jadwalStatistika = [
-    { 'kode': 'p1', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' },
-    { 'kode': 'p2', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Basis Data' },
-    { 'kode': 'p3', 'hari': 'Kamis', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' }
+    { 'kode': 'p1', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 30 },
+    { 'kode': 'p2', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Basis Data', 'sisa': 30 },
+    { 'kode': 'p3', 'hari': 'Kamis', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 30 }
   ];
 
   jadwalBasisdata = [
-    { 'kode': 'p1', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' },
-    { 'kode': 'p2', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Basis Data' },
-    { 'kode': 'p3', 'hari': 'Kamis', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' }
+    { 'kode': 'p1', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 25 },
+    { 'kode': 'p2', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Basis Data', 'sisa': 20 },
+    { 'kode': 'p3', 'hari': 'Kamis', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 10 }
   ];
 
   jadwalSdata = [
-    { 'kode': 'p1', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' },
-    { 'kode': 'p2', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Basis Data' },
-    { 'kode': 'p3', 'hari': 'Kamis', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' }
+    { 'kode': 'p1', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 0 },
+    { 'kode': 'p2', 'hari': 'Rabu', 'jam': '13.30 - 15.00', 'lab': 'Basis Data', 'sisa': 3 },
+    { 'kode': 'p3', 'hari': 'Kamis', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 0 }
   ];
 
   jadwalKDJK = [
-    { 'kode': 'p1', 'hari': 'Senin', 'jam': '13.30 - 15.00', 'lab': 'Jaringan' },
-    { 'kode': 'p2', 'hari': 'Minggu', 'jam': '13.30 - 15.00', 'lab': 'AI' },
-    { 'kode': 'p3', 'hari': 'Lebaran', 'jam': '13.30 - 15.00', 'lab': 'Riset' }
+    { 'kode': 'p1', 'hari': 'Senin', 'jam': '13.30 - 15.00', 'lab': 'Jaringan', 'sisa': 7 },
+    { 'kode': 'p2', 'hari': 'Minggu', 'jam': '13.30 - 15.00', 'lab': 'AI', 'sisa': 0 },
+    { 'kode': 'p3', 'hari': 'Lebaran', 'jam': '13.30 - 15.00', 'lab': 'Riset', 'sisa': 5 }
   ];
 
   ambil = [
@@ -70,6 +70,7 @@ export class PageSlotComponent implements OnInit {
 
   hasil() {
     window.alert(this.pilihan_notif);
+    this.ambilModal = [];
   }
 
 }
