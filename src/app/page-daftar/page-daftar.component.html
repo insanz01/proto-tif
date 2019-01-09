@@ -15,7 +15,7 @@
       </div>
 
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 1">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -36,7 +36,7 @@
         </h5>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 2">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -57,7 +57,7 @@
         </h5>
       </div>
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 3">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -78,7 +78,7 @@
         </h5>
       </div>
       <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 4">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -99,7 +99,7 @@
         </h5>
       </div>
       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 5">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -120,7 +120,7 @@
         </h5>
       </div>
       <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 6">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -141,7 +141,7 @@
         </h5>
       </div>
       <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-        <div class="card-body px-5">
+        <div class="card-body px-5 py-3">
           <div *ngFor="let item of praktikum">
             <div class="form-check" *ngIf="item.semester === 7">
               <input class="form-check-input" type="checkbox" value="" [id]="item.kode">
@@ -154,5 +154,7 @@
       </div>
     </div>
   </div><br>
-  <button type="button" class="btn btn-primary btn-block">Submit</button>
+  <button type="button" class="btn btn-primary btn-block py-2 mx-2" [routerLink]="['/praktikum']" routerLinkActive="router-link-active">
+    Submit
+  </button>
 </div>
